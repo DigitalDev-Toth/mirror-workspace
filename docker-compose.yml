@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    command: sh -l
+    container_name: application.mirror-pro.dev
+    image: mirrorpro/application:0.1
+    ports:
+      - "8018:8018"
+      - "8028:8028"
+      - "8038:8038"
+      - "8048:8048"
+      - "8058:8058"
+      - "8068:8068"
+    tty: true
+    volumes:
+      - ../:/var/www

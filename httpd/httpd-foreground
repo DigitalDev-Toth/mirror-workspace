@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+rm -f /var/log/httpd/httpd.pid
+
+exec httpd -DFOREGROUND

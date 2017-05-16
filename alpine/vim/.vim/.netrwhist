@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/root'
+let g:netrw_dirhist_2='/root/.vim'
+let g:netrw_dirhist_3='/root/.vim/autoload'
+let g:netrw_dirhist_4='/root/.vim/bundle/snipmate.vim/snippets'

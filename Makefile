@@ -314,6 +314,7 @@ start-%:
 		"app") \
 			echo "Starting container $*" ;\
 			docker-compose up -d $* ;;\
+			docker-compose exec -d $* /etc/httpd/bin/httpd ;\
 		*) echo "Container is not valid" ;;\
 	esac;
 
@@ -333,7 +334,6 @@ shell-%:
 	@case "$*" in \
 		"app") \
 			echo "Accesing to shell of container $*" ;\
-			docker-compose exec -d $* /etc/httpd/bin/httpd ;\
 			docker-compose exec $* sh -l ;;\
 		*) echo "Container is not valid" ;;\
 	esac;

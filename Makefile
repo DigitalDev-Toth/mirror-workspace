@@ -313,8 +313,8 @@ start-%:
 	@case "$*" in \
 		"app") \
 			echo "Starting container $*" ;\
-			docker-compose up -d $* ;;\
-			docker-compose exec -d $* /etc/httpd/bin/httpd ;\
+			docker-compose up -d $* ;\
+			docker-compose exec -d $* /etc/httpd/bin/httpd ;;\
 		*) echo "Container is not valid" ;;\
 	esac;
 

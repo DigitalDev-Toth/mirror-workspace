@@ -44,19 +44,19 @@ Inside your `workspace` container services
 
 - Build a container service:
 ```
-make t={TAG} build-app
+make t={TAG} build-application
 ```
 - Run a single container service:
 ```
-make t={TAG} run-app
+make t={TAG} run-application
 ```
 - Pull a image from docker hub:
 ```
-make t={TAG} pull-app
+make t={TAG} pull-application
 ```
 - Push a image to docker hub:
 ```
-make t={TAG} push-app
+make t={TAG} push-application
 ```
 ** all tags are optional
 

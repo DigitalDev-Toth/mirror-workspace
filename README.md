@@ -15,13 +15,13 @@ ENVIRONMENT
 
 HOW TO USE IT
 ---
-Inside your `mirror-workspace` container services
+Inside your `workspace` container services
 
-- Pull `mirror-workspace` environment from docker hub:
+- Pull `workspace` environment from docker hub:
 ```
-make pull-app
+make pull-application
 ```
-- Start the `mirror-workspace` environment:
+- Start the `workspace` environment:
 ```
 make start-app
 ```
@@ -29,18 +29,18 @@ make start-app
 ```
 make shell-app
 ```
-- Stop the `mirror-workspace` environment:
+- Stop the `workspace` environment:
 ```
 make stop-app
 ```
-- Remove the `mirror-workspace` environment:
+- Remove the `workspace` environment:
 ```
 make rm-all
 ```
 
 WORKING WITH IMAGES
 ---
-Inside your `mirror-workspace` container services
+Inside your `workspace` container services
 
 - Build a container service:
 ```
@@ -63,7 +63,7 @@ make t={TAG} push-app
 
 CONTAINER
 ---
-- Bitbucket repository
+- Github repository
 ```
 https://github.com/DigitalDev-Toth/mirror-workspace
 ```
